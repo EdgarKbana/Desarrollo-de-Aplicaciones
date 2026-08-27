@@ -1,0 +1,42 @@
+site_name: Pagatu
+site_url: https://262dist.github.io/pagatu/
+repo_url: https://github.com/262dist/pagatu
+repo_name: 262dist/pagatu
+docs_dir: docs
+
+nav:
+  - Inicio: index.md
+  - Guía de Proyecto Sello:
+      - Guía del proyecto: proyecto-sello/index.md
+  - Silabos:
+      - Silabo 2026-1: silabo_dist_2026_1.md
+      - Silabo 2026-2: silabo_dist_2026_2.md
+  - I. Sistema distribuido base orientado a producción:
+      - S1 - Construcción de un servicio base para un sistema distribuido: sesiones/S01_Construccion_Servicio_Base.md
+      - S2 - Gestión centralizada de configuración y ambientes: sesiones/S02_Configuracion_Centralizada_Ambientes.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.magiclink
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+
+plugins:
+  - search
