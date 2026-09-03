@@ -1,0 +1,9 @@
+server:
+  port: 8085
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost:18761/eureka
