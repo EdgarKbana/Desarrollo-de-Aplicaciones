@@ -1,6 +1,6 @@
 spring:
   application:
-    name: orden-ms
+    name: pagatu-eureka
   profiles:
     active: dev
   config:
