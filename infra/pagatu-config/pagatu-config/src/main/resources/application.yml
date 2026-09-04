@@ -4,13 +4,12 @@ server:
 spring:
   application:
     name: pagatu-config
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: ${CONFIG_REPO_LOCATION:file:./config-repo}
+        git:
+          uri: https://github.com/EdgarKbana/Desarrollo-de-Aplicaciones
+          default-label: master
 
 management:
   endpoints:
